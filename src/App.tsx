@@ -1,10 +1,17 @@
 import React from 'react';
+import Table from './components/organisms/Table/Table';
 
 function App() {
   return (
     <div className="App">
       <h1>Hello World</h1>
-      <p>Lorem ipsum dolor sit amet</p>
+      <Table tableHeadings={[
+        "Name",
+        "Rating",
+        "Country",
+        "Submission Date",
+        "Verification"
+      ]} />
     </div>
   );
 }
