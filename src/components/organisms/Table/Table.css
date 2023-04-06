@@ -1,0 +1,44 @@
+.o-table__wrapper {
+  display: inline-block;
+  /* need more robust height calc */
+  max-height: 22.375rem;
+  overflow-y: auto;
+}
+
+.o-table {
+  border-collapse: collapse;
+
+  border-top-left-radius: 0.5rem;
+}
+
+.o-table td,
+.o-table th {
+  border: 1px solid #544d47;
+  border-left: none;
+  border-top: none;
+}
+
+.o-table tbody tr:nth-child(even) {
+  background: #e4e0e0;
+}
+
+.o-table tbody tr:nth-child(odd) {
+  background: #f8f8f7;
+}
+
+.o-table td:last-child,
+.o-table th:last-child {
+  border-right: none;
+}
+
+.o-table th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+.o-table th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+
+.o-table td {
+  padding: 0.5rem 1rem;
+}
